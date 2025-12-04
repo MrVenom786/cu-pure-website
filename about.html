@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CU Pure – About Us</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+    body {
+        font-family: Poppins, sans-serif;
+        background: linear-gradient(135deg, #001b38, #005bbb);
+        margin: 0;
+        color: white;
+    }
+
+    header {
+        width: 100%;
+        padding: 15px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(0,0,0,0.3);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    header .logo {
+        height: 55px;
+        width: auto;
+    }
+
+    nav {
+        display: flex;
+        gap: 25px;
+    }
+
+    nav a {
+        color: #00eaff;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        color: white;
+        text-shadow: 0 0 10px #00eaff;
+    }
+
+    .title {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 35px;
+        color: white;
+        text-shadow: 0 0 10px rgba(0,255,255,0.5);
+    }
+
+    .about-container {
+        width: 80%;
+        margin: 50px auto;
+        background: rgba(255,255,255,0.1);
+        padding: 30px;
+        border-radius: 20px;
+        text-align: center;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+    }
+
+    .about-container h2 {
+        font-size: 28px;
+        color: #00eaff;
+        margin-bottom: 20px;
+        text-shadow: 0 0 8px rgba(0,255,255,0.5);
+    }
+
+    .about-container p {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #ffffffd9;
+        margin-bottom: 20px;
+    }
+
+    .team {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 25px;
+        margin-top: 30px;
+    }
+
+    .team-member {
+        background: rgba(255,255,255,0.1);
+        padding: 20px;
+        border-radius: 20px;
+        width: 250px;
+        text-align: center;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        transition: 0.3s;
+    }
+
+    .team-member img {
+        width: 80%;
+        border-radius: 50%;
+        margin-bottom: 15px;
+    }
+
+    .team-member h4 {
+        color: #00eaff;
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+
+    .team-member p {
+        color: #ffffffd9;
+        font-size: 16px;
+    }
+
+    @media(max-width: 768px){
+        .team {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="images/logo.png" class="logo">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="filtration.html">Filtration</a>
+        <a href="about.html">About</a>
+    </nav>
+</header>
+
+<h1 class="title">About CU Pure</h1>
+
+<div class="about-container">
+    <h2>Our Mission</h2>
+    <p>At CU Pure, our mission is to provide clean, safe, and eco-friendly drinking water to the students and staff of Chandigarh University. We aim to promote a healthy lifestyle while supporting sustainability by reducing plastic waste through reusable bottles.</p>
+
+    <h2>Our Story</h2>
+    <p>CU Pure was founded with the vision of creating a premium water bottle brand that caters to university students. Starting locally, our goal is to expand nationwide, offering high-quality water solutions for individuals, companies, hotels, and restaurants.</p>
+
+    <h2>Meet the Team</h2>
+    <div class="team">
+        <div class="team-member">
+            <img src="images/team1.png" alt="Team Member 1">
+            <h4>Sumit Chauhan</h4>
+            <p>Founder & CEO</p>
+        </div>
+        <div class="team-member">
+            <img src="images/team2.png" alt="Team Member 2">
+            <h4>Member 2</h4>
+            <p>Operations Manager</p>
+        </div>
+        <div class="team-member">
+            <img src="images/team3.png" alt="Team Member 3">
+            <h4>Member 3</h4>
+            <p>Marketing Lead</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

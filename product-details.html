@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CU Pure – Product Details</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+    body {
+        background: linear-gradient(135deg, #001b38, #005bbb);
+        margin: 0;
+        color: white;
+        font-family: Poppins, sans-serif;
+    }
+
+    .details-box {
+        width: 80%;
+        margin: 50px auto;
+        background: rgba(255,255,255,0.1);
+        padding: 30px;
+        border-radius: 20px;
+        text-align: center;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+    }
+
+    .details-box img {
+        width: 40%;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+
+    .price {
+        font-size: 25px;
+        color: #00eaff;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="images/logo.png" class="logo">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="filtration.html">Filtration</a>
+        <a href="about.html">About</a>
+    </nav>
+</header>
+
+<div class="details-box">
+    <img id="productImg" src="">
+    <h2 id="productName"></h2>
+    <p class="price" id="productPrice"></p>
+
+    <p id="productDesc"></p>
+
+    <a class="btn" href="#">Buy Now</a>
+</div>
+
+<script>
+    // Sample product data
+    const products = {
+        1: {
+            name: "CU Pure Classic Bottle",
+            price: "₹150",
+            img: "images/bottle1.png",
+            desc: "Lightweight, durable and perfect for everyday CU hydration."
+        },
+        2: {
+            name: "CU Pure Premium Bottle",
+            price: "₹249",
+            img: "images/bottle2.png",
+            desc: "Premium quality bottle with improved insulation."
+        },
+        3: {
+            name: "CU Pure Steel Bottle",
+            price: "₹499",
+            img: "images/bottle3.png",
+            desc: "Heavy-duty steel bottle for long-lasting freshness."
+        }
+    };
+
+    const id = new URLSearchParams(window.location.search).get("id");
+    const p = products[id];
+
+    document.getElementById("productImg").src = p.img;
+    document.getElementById("productName").innerText = p.name;
+    document.getElementById("productPrice").innerText = p.price;
+    document.getElementById("productDesc").innerText = p.desc;
+</script>
+
+</body>
+</html>

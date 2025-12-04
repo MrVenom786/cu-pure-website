@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CU Pure – Products</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+    body {
+        font-family: Poppins, sans-serif;
+        background: linear-gradient(135deg, #001b38, #005bbb);
+        color: white;
+        margin: 0;
+    }
+
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    .product-card {
+        background: rgba(255,255,255,0.1);
+        padding: 20px;
+        text-align: center;
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        transition: 0.3s;
+        box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .product-card:hover { transform: scale(1.05); }
+
+    .product-card img {
+        width: 70%;
+        border-radius: 15px;
+        margin-bottom: 10px;
+    }
+
+    .product-card h3 { color: #00eaff; }
+
+    @media(max-width: 768px) {
+        .product-grid { grid-template-columns: 1fr; }
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="images/logo.png" class="logo">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="filtration.html">Filtration</a>
+        <a href="about.html">About</a>
+    </nav>
+</header>
+
+<h1 class="title">Our Premium Bottle Collection</h1>
+
+<div class="product-grid">
+
+    <div class="product-card">
+        <img src="images/bottle1.png">
+        <h3>CU Pure Classic</h3>
+        <p>₹150</p>
+        <a class="btn" href="product-details.html?id=1">View Details</a>
+    </div>
+
+    <div class="product-card">
+        <img src="images/bottle2.png">
+        <h3>CU Pure Premium</h3>
+        <p>₹249</p>
+        <a class="btn" href="product-details.html?id=2">View Details</a>
+    </div>
+
+    <div class="product-card">
+        <img src="images/bottle3.png">
+        <h3>CU Pure Steel</h3>
+        <p>₹499</p>
+        <a class="btn" href="product-details.html?id=3">View Details</a>
+    </div>
+
+</div>
+
+</body>
+</html>
